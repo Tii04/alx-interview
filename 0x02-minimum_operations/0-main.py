@@ -1,12 +1,12 @@
 #!/usr/bin/python3
+"""
+Main file for testing
+"""
 
-canUnlockAll = __import__('0-lockboxes').canUnlockAll
+minOperations = __import__('0-minoperations').minOperations
 
-boxes = [[1], [2], [3], [4], []]
-print(canUnlockAll(boxes))
+n = 4
+print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
 
-boxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]
-print(canUnlockAll(boxes))
-
-boxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]
-print(canUnlockAll(boxes))
+n = 12
+print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
