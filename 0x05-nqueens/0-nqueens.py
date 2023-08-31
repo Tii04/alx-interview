@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 import sys
 
 
@@ -42,7 +43,8 @@ def solve_nqueens(N):
 
 def print_solutions(solutions):
     for solution in solutions:
-        print("\n".join(solution))
+        for row in solution:
+            print("[" + ", ".join(str(int(col == 'Q')) for col in row) + "]")
         print()
 
 
