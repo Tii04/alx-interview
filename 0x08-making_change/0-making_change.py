@@ -1,4 +1,5 @@
-    #!/usr/bin/python3
+#!/usr/bin/python3
+
 """
     Given a pile of coins of different values,
     the fewest number of coins needed to
